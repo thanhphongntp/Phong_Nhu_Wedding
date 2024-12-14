@@ -10059,3 +10059,109 @@ body {
     left: 0;
     margin: 0px 15px 15px 15px;
 }
+
+/* Wedding Schedule Section with Flower Theme */
+#schedule {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    position: relative;
+    background-image: url('../images/rose_flower.jpg'); /* Use your flower image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #schedule .container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #schedule h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+  }
+  
+  #schedule ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #schedule ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  
+  #schedule ul li time {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  #schedule ul li .location {
+    font-size: 1.1rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  #schedule ul li .location i {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-right: 10px;
+  }
+  
+  #schedule ul li i {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-right: 10px;
+  }
+  
+  /* Fancy Flower Border */
+  #schedule ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-image: url("../images/gift/heart.gif"); /* Flower border image at the bottom */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left : 720px;
+    top: 30px;
+    bottom: 0px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #schedule h2 {
+      font-size: 2rem;
+    }
+  
+    #schedule ul li {
+      padding: 15px;
+    }
+  
+    #schedule ul li time {
+      font-size: 1.3rem;
+    }
+  
+    #schedule ul li .location {
+      font-size: 1rem;
+    }
+  }
+  
